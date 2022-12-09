@@ -1,16 +1,22 @@
 console.log("cointossjs")
-var mybody = document.getElementsByTagName('body');
+var mybody = document.getElementById('mybody');
 //mybody.onkeypress=function(){change_counter(event)}
-var counterx = 0;
-var countero = 0;
+var counter = 1;
+
 function change_counter(event){
+  var mybody = document.getElementById('mybody');
     console.log(event.keyCode)
   if (event.keyCode == 88){
-    counterx += 1;
-    document.getElementById('coincounterx').innerHTML = counterx;
+    counter += 1;
+    document.getElementById('toss-number').innerHTML = counter;
+    document.getElementById('starting-position').innerHTML = "HEADS"
   }
     if(event.keyCode == 79){
-    countero += 1;
-        document.getElementById('coincountero').innerHTML=countero;
+    counter += 1;
+        document.getElementById('toss-number').innerHTML=counter;
+        document.getElementById('starting-position').innerHTML = "TAILS"
     }
+}
+function toss_error(){
+  document.getElementById('starting-position').innerHTML = "HEADS"
 }
