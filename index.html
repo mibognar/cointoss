@@ -5,8 +5,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body onkeyup="change_counter(event)">
-        <script src="js/cointoss.js" charset="utf-8"></script>
-
+       
         <div class="manual">
           <div class="manual-element" style="width: 400px;">
               Starting position:
@@ -20,9 +19,10 @@
         <br />
          <br />
          <div class="manual">
-           <div class="manual-element">Press 'X' if it's heads</div>
+           <div class="manual-element">Press 'x' if it's heads</div>
           <div class="manual-element">Toss number:</div>
-          <div class="manual-element">Press "O" if it's tails</div>
+          <div class="manual-element">Press "o" if it's tails</div>
+
          </div>
          <div class="manual">
            <img class="manual-element" src="coin_heads_marked.png" alt="">
@@ -30,7 +30,12 @@
            <img class="manual-element" src="coin_tails_marked.png" alt="">
          </div>
          <div class="manual">
-           <button class="manual-element" type="button" name="button" onclick="toss_error()">TOSS ERROR</button>
+           <div class="manual-element" style="width: 300px">Press "SPACE" if toss error</div>
          </div>
+         <div id="toss-confirm-div" class="popup">
+            <div id="toss-confirm" class="popup-element">hello</div>
+         </div>
+ <script src="js/cointoss.js" charset="utf-8"></script>
+
     </body>
 </html>
