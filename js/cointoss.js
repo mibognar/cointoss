@@ -3,6 +3,7 @@ var mybody = document.getElementById('mybody');
 var result = "h"
 var toss_confirm = document.getElementById('toss-confirm');
 var counter = 1;
+var experiment_started = 1;
 var confirm_toss = 0;
 var result_list = "";
 var result_confirm = "HEADS";
@@ -14,12 +15,12 @@ function change_counter(event){
 
     var mybody = document.getElementById('mybody');
     console.log(event.keyCode)
-    if (event.keyCode == 88){
+    if (event.keyCode == 88 & experiment_started == 1){
       result = "h"
       confirm_toss = 1;
       toss_confirm_div.style="visibility: visible";
       }
-    if(event.keyCode == 79){
+    if(event.keyCode == 79 & experiment_started == 1){
         result = "t"
         confirm_toss = 1;
         toss_confirm_div.style = "visibility: visible";
@@ -39,7 +40,7 @@ function change_counter(event){
         confirm_toss = 0;
         toss_confirm_div.style = "visibility: hidden"
     }
-    if (event.keyCode ==32 & confirm_toss == 0){
+    if (event.keyCode ==32 & confirm_toss == 0 & experiment_started == 1){
         toss_error()
     }
     toss_confirmation()
