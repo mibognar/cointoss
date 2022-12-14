@@ -35,10 +35,13 @@ function neptun(){
   coin_type = document.getElementById('coin-type').value;
   console.log(neptun_code)
   console.log(coin_type)
-
-  document.getElementById('neptun').style = "display:none";
-  document.getElementById('start-camera').style = "display:block";
-  document.getElementById('sequencenumber').innerHTML = sequencenumber
+  if (neptun_code !=="" & coin_type !==""){
+    document.getElementById('neptun').style = "display:none";
+    document.getElementById('start-camera').style = "display:block";
+    document.getElementById('sequencenumber').innerHTML = sequencenumber
+  }else{
+    document.getElementById('required').innerHTML = "You must fill out these forms!"
+  }
 }
 
 function start_sequence(){
