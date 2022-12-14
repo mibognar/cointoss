@@ -1,3 +1,9 @@
+#experiment-div{
+  display: none;
+}
+#instructions-div{
+	display: block;
+}
 .infodiv {
   display: flex;
   position: absolute;
@@ -19,6 +25,13 @@
 .manual-element{
   top: 50%;
   width: 200px;
+  text-align: center;
+  font-size: 33px;
+  font-style: oblique;
+  font-family: monospace;
+}
+.instruction{
+  width: 1500px;
   text-align: center;
   font-size: 33px;
   font-style: oblique;
