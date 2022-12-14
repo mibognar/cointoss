@@ -5,56 +5,188 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body onkeyup="change_counter(event)">
+      <div id="consent-form">
+        <div class="manual">
+  		    <div class="instruction">
+  			    You are about to take part in an experiment that aims to investigate
+            a theory by Diaconis and colleagues (2008) claiming that a fair coin flip
+            is not fair when the starting position of the coin is determined.
+            <br></br>
+  			    In this experiment we will record your neptun-id and you will need to record
+            your coin flips with your computer camera. These recordings will be asked
+            to be uploaded to a university server for further investigations. You may
+            stop partaking in the experiment any time during the data collection. You may
+            also ask for the removal of your collected data at any time. For further
+            information about the Lab's data handling policy follow this link:
+            <a href="http://decisionlab.elte.hu/hozzajarulas-adatkezeleshez/">DATA POLICY</a>
+            <br></br>
+            If you accept to take part in the experiment, press 'Next'. If you do not accept,
+            you may leave this page.
+  		    </div>
+        </div>
+        <div class="manual">
+          <button class="instruction" onclick="consent()">NEXT</button>
+        </div>
+
+
+      </div>
 	    <div id="instructions-div">
 		    <div class="manual">
-		    <div class="instruction">Instructions<br></br>
-			    In this experiment you will have to play the cointoss game 
-			    600 times with one coin that has its heads marked with an 'X' 
-			    and tails marked with an 'O'. 
-			    During the experiment you will see a screen that will count
-			    your tosses and record your results. You also need to record your
-			    tosses with the camera of your computer. During this experiment
-			    you shall not refresh yor browser window, but you can minimize it
-			    while you set up your camera recordings.
-			    First, you need to mark your chosen coin as seen below:<br></br>
+  		    <div class="instruction">Instructions<br></br>
+  			    In this experiment you will have to play the cointoss game
+  			    600 times with one coin that has its heads marked with an 'X'
+  			    and tails marked with an 'O'.
+  			    During the experiment you will see a screen that will count
+  			    your tosses and record your results. You also need to record your
+  			    tosses with the camera of your computer. During this experiment
+  			    you shall not refresh yor browser window, but you can minimize it
+  			    while you set up your camera recordings.
+  			    First, you need to mark your chosen coin as seen below:<br></br>
 
-		    </div></div>
-		<div class=manual>
-			<div class="manual-element">Mark the heads of your coin with an X</div>
-			<div class="manual-element">Mark the tails of your coin with an O</div>
-	
-		</div>
-		<div class="manual">
-           		<img class="manual-element" src="coin_heads_marked.png" alt="">
-                        <img class="manual-element" src="coin_tails_marked.png" alt="">
-         	</div>
-		<div class="manual">
-		<div class="instruction">
-			During the experiment you will have to toss the coin
-			and catch it with one hand with an open palm. Record the result with
-			a keypress, then start a new toss with the same side up as your last
-			toss' result. See the images below:</div>
-		</div>
-<div class="manual">
-           		<img class="manual-element" src="coin_heads_marked.png" alt="">
-                        <img class="manual-element" src="coin_tails_marked.png" alt="">
+  		    </div>
+        </div>
+        <div class=manual>
+          <div class="manual-element">Mark the heads of your coin with an X</div>
+          <div class="manual-element">Mark the tails of your coin with an O</div>
+        </div>
+        <div class="manual">
+          <img class="manual-element" src="coin_heads_marked.png" alt="">
+          <img class="manual-element" src="coin_tails_marked.png" alt="">
+        </div>
+        <div class="manual">
+          <div class="instruction">
+            During the experiment you will have to toss the coin
+            and catch it with one hand with an open palm. Mark the result with
+            a keypress ('X' if heads or 'O' if tails), then start a new toss with the same side up as your last
+            toss' result. See the images below:
+          </div>
+        </div>
+        <div class="manual">
+          <img class="manual-element" src="starting1.png" alt="">
+          <img class="manual-element" src="landing.png" alt="">
+          <img class="manual-element" src="starting2.png" alt="">
+        </div>
+        <div class="manual">
+          <div class="manual-element">Starting position TAILS</div>
+         <div class="manual-element">Toss resulted in HEADS</div>
+         <div class="manual-element">New starting position HEADS</div>
+        </div>
+        <div class="manual">
+          <div class="instruction">
+            <br></br>
+            If the toss fell on the ground, or it flipped after the land, mark the toss
+            as a 'toss error' by pressing 'SPACE'.<br></br>
+            PRESS 'NEXT' if you have understood the above instructions.
+          </div>
+        </div>
+        <div class="manual">
+          <button class="instruction" onclick="instruction1()">NEXT</button>
+        </div>
+        </div>
+      </div>
+      <div id="instructions-div2">
+        <div class="manual">
+  		    <div class="instruction">
+  			    During your cointosses you need to record with your computer's camera.
+            The camera has to be set up in a way that the coin starting position (on your thumb)
+            and the landing position (in your palm) can be seen on the screen.<br></br>
+          </div>
+        </div>
+        <div class="manual">
+  		    <div class="instruction">
+  			   The test will be separated into 6 sequences with 100 tosses in each. You will need to
+           start the camera recording at the start of the sequences, and stop it at the end.
+           You will see a link where you can upload your video.
+           Please be aware that filesizes of the videos must be under 1GB and
+           the file format have to be '.mp4'.<br></br>
+           Before starting the experiment make sure you have an application on your computer
+           that can record .mp4 videos. If you suspect that your videos might be too
+           big, try decreasing the default resolution of the recording.
+           <br></br>
+           You should not show your face on camera and you do not need to narrate your tosses.
+           You only need to make sure that all toss starting positions and landing positions
+           are visible on camera.
+           PRESS 'NEXT' if you have understood the above instructions.
+          </div>
+        </div>
+        <div class="manual">
+          <button class="instruction" onclick="instruction2()">NEXT</button>
+        </div>
+      </div>
+      <div id="neptun">
+        <div class="manual">
+  		    <div class="instruction">
+  			    ENTER YOUR NEPTUN CODE HERE
+          </div>
+        </div>
+        <div class="manual">
+          <form type="text" >
+            <input type="text" id="neptun-code" ><br>
+          </form>
+        </div>
+        <div class="manual">
+  		    <div class="instruction">
+  			    ENTER YOUR COIN TYPE HERE (e.g. 1EUR)
+          </div>
+        </div>
+        <div class="manual">
+          <form type="text" >
+            <input type="text" id="coin-type" ><br>
+          </form>
+        </div>
+        <div class="manual">
+          <button class="instruction" onclick="neptun()">NEXT</button>
+        </div>
+      </div>
 
-			<img class="manual-element" src="coin_tails_marked.png" alt="">
-         	</div>
-		<div class="manual">
-			<div class="instruction">
-				The experiment will be separated into 6 blocks that you will
-				need to record separately. At the end of the experiment you
-				should upload 6 separate videos.
-			</div>
-
-
-	    </div>
-		
-	 <div id="experiment-div">  
+      <div id="start-camera">
+        <div class="manual">
+  		    <div class="instruction">
+  			    Sequence number
+          </div>
+        </div>
+        <div class="manual">
+  		    <div class="instruction" id="sequence">1</div>
+        </div>
+        <div class="manual">
+  		    <div class="instruction">
+  			    is about to start. Before starting make sure that you have: <br></br><br></br>
+            - Started recording <br></br>
+            - Your hands and the coin is visible for the camera <br></br>
+            - The coin is marked with an X (heads) and an O (tails)<br></br>
+            - The coin starting position is HEADS <br></br><br></br>
+            If all the above conditions are met, press 'START' to start the sequence.
+          </div>
+        </div>
+        <div class="manual">
+          <button class="instruction" onclick="start_sequence()">START</button>
+        </div>
+      </div>
+      <div id="restart-camera">
+        <div class="manual">
+  		    <div class="instruction">
+            Sequence number
+          </div>
+        </div>
+        <div class="manual">
+  		    <div class="instruction" id="sequencenumber"></div>
+        </div>
+        <div class="manual">
+  		    <div class="instruction">
+  			    has ended. Please upload your video to the following link, it will open in a separate tab (PLEASE DON'T CLOSE THE CURRENT TAB):
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=zdtms8NPUUSC0uI5VkMCw-apkkTNbfRMgLzxBPZIP59UOUpZSEZNSVc1VTRaWkEzUTlTT0tQQ0JRWi4u" target="_blank" rel="noopener noreferrer">UPLOAD LINK</a>
+            <br></br>
+            If you have uploaded your file, press 'NEXT'
+          </div>
+        </div>
+        <div class="manual">
+          <button class="instruction" onclick="next_sequence()">NEXT</button>
+        </div>
+      </div>
+      <div id="experiment-div">
         <div class="manual">
           <div class="manual-element" style="width: 400px;">
-              Starting position:
+            Starting position:
           </div>
         </div>
         <div class="manual">
@@ -72,20 +204,27 @@
          </div>
          <div class="manual">
            <img class="manual-element" src="coin_heads_marked.png" alt="">
-                     <div id="toss-number" class="manual-element" style="font-size: 53px;">1</div>
+          <div id="toss-number" class="manual-element" style="font-size: 53px;">1</div>
            <img class="manual-element" src="coin_tails_marked.png" alt="">
-        that you will
-	 need to record separately. At the end of the experiment you
-	 should upload 6 separate videos.
-	 </div></div>
+         </div>
          <div class="manual">
            <div class="manual-element" style="width: 300px">Press "SPACE" if toss error</div>
          </div>
+       </div>
+       <div id="goodbye">
+         <div class="manual">
+   		    <div class="instruction">
+   			    Congratulations! You have tossed a coin 600 times. Thanks for taking part in this experiment.
+            To get your points follow this <a href="https://docs.google.com/forms/d/e/1FAIpQLScNVXHxO4wLY_lffPvaxUZ9Yk4ngIWn2Bm8V9e4v6ngjhsWVg/viewform" target="_blank" rel="noopener noreferrer">LINK</a>
+            You may leave this page now.
+           </div>
+         </div>
+       </div>
          <div id="toss-confirm-div" class="popup">
             <div id="toss-confirm" class="popup-element">hello</div>
          </div>
-	 </div>
  <script src="js/cointoss.js" charset="utf-8"></script>
+  <script src="js/save.js" charset="utf-8"></script>
 
     </body>
 </html>

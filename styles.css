@@ -2,8 +2,28 @@
   display: none;
 }
 #instructions-div{
-	display: block;
+	display: none;
 }
+
+#instructions-div2{
+  display: none;
+}
+
+#start-camera{
+  display: none;
+}
+#neptun{
+  display: none;
+}
+
+#restart-camera{
+  display: none;
+}
+#goodbye{
+  display:none;
+}
+
+
 .infodiv {
   display: flex;
   position: absolute;
