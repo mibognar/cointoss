@@ -45,15 +45,14 @@ function instruction2(){
 }
 function neptun(){
   neptun_code = document.getElementById('neptun-code').value;
-  coin_type = document.getElementById('coin-type').value;
   console.log(neptun_code)
   console.log(coin_type)
-  if (neptun_code !=="" & coin_type !==""){
+  if (neptun_code !==""){
     document.getElementById('neptun').style = "display:none";
     document.getElementById('start-camera').style = "display:block";
     document.getElementById('sequencenumber').innerHTML = sequencenumber
   }else{
-    document.getElementById('required').innerHTML = "You must fill out these forms!"
+    document.getElementById('required').innerHTML = "You must fill out the form!"
   }
 }
 
@@ -130,7 +129,6 @@ function toss_confirmation(){
 function end_sequence(){
   var currentData = {};
   currentData["neptun"] = neptun_code
-  currentData["coin_type"]=coin_type
   currentData["sequence_number"] = sequencenumber
   currentData["sequence"] = result_list
   currentData["info_version"] = inform_version
