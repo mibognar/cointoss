@@ -1,1 +1,2 @@
-id,coin_type,sequence_number,sequence
+id,coin_type,sequence_number,sequence,info_version
+

@@ -11,6 +11,18 @@ var result_confirm = "HEADS";
 var sequencenumber = 1
 var neptun_code = ""
 var participant_data = [];
+var inform_version = 0
+
+inform_version = Math.round(Math.random())
+console.log(inform_version)
+if (inform_version == 0){
+  document.getElementById('consent-form').style = "display:bock";
+  document.getElementById('consent-form2').style = "display:none"; 
+}else{
+  document.getElementById('consent-form').style = "display:none";
+  document.getElementById('consent-form2').style = "display:block"; 
+}
+
 window.onbeforeunload = function() {
    return 'Do you really want to leave this page? Data will be lost!';
 };
@@ -18,6 +30,7 @@ var toss_confirm_div = document.getElementById('toss-confirm-div')
 
 function consent(){
   document.getElementById('consent-form').style = "display:none";
+  document.getElementById('consent-form2').style = "display:none"; 
   document.getElementById('instructions-div').style = "display:block";
 }
 
@@ -120,6 +133,7 @@ function end_sequence(){
   currentData["coin_type"]=coin_type
   currentData["sequence_number"] = sequencenumber
   currentData["sequence"] = result_list
+  currentData["info_version"] = inform_version
   save_data(currentData, 'save.php')
   sequencenumber +=1
   experiment_started = 0
