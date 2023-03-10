@@ -29,17 +29,23 @@ window.onbeforeunload = function() {
 var toss_confirm_div = document.getElementById('toss-confirm-div')
 
 function consent(){
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   document.getElementById('consent-form').style = "display:none";
   document.getElementById('consent-form2').style = "display:none"; 
   document.getElementById('instructions-div').style = "display:block";
 }
 
 function instruction1(){
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   document.getElementById('instructions-div').style = "display:none";
   document.getElementById('instructions-div2').style = "display:block";
 }
 
 function instruction2(){
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   document.getElementById('instructions-div2').style = "display:none";
   document.getElementById('neptun').style = "display:block";
 }
