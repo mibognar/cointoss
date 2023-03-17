@@ -19,11 +19,11 @@ console.log(inform_version)
 if (inform_version == 0){
   document.getElementById('consent-form').style = "display:bock";
   document.getElementById('consent-form2').style = "display:none";
-  information = "HT"
+  information = "SS"
 }else{
   document.getElementById('consent-form').style = "display:none";
   document.getElementById('consent-form2').style = "display:block";
-  information = "SS" 
+  information = "HT" 
 }
 
 window.onbeforeunload = function() {
