@@ -147,6 +147,7 @@ function end_sequence(){
   document.getElementById('toss-number').innerHTML = counter;
   document.getElementById('sequencenumber').innerHTML = sequencenumber-1
   document.getElementById('sequence').innerHTML = sequencenumber
+  document.getElementById('uvaid').innerHTML = neptun_code + "_" + (sequencenumber-1)
   document.getElementById('experiment-div').style = "display: none"
   document.getElementById('restart-camera').style = "display: block"
 }
