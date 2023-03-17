@@ -12,19 +12,22 @@ var sequencenumber = 1
 var neptun_code = ""
 var participant_data = [];
 var inform_version = 0
+var information = ""
 
 inform_version = Math.round(Math.random())
 console.log(inform_version)
 if (inform_version == 0){
   document.getElementById('consent-form').style = "display:bock";
-  document.getElementById('consent-form2').style = "display:none"; 
+  document.getElementById('consent-form2').style = "display:none";
+  information = "HT"
 }else{
   document.getElementById('consent-form').style = "display:none";
   document.getElementById('consent-form2').style = "display:block"; 
+  information = "SS"
 }
 
 window.onbeforeunload = function() {
-   return 'Do you really want to leave this page? Data will be lost!';
+   return 'Do you really want to leave this page? If you did not finish all 600 coin tosses, all your data will be lost!';
 };
 var toss_confirm_div = document.getElementById('toss-confirm-div')
 
@@ -136,7 +139,7 @@ function end_sequence(){
   currentData["neptun"] = neptun_code
   currentData["sequence_number"] = sequencenumber
   currentData["sequence"] = result_list
-  currentData["info_version"] = inform_version
+  currentData["info_version"] = information
   save_data(currentData, 'save.php')
   sequencenumber +=1
   experiment_started = 0
