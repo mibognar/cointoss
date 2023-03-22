@@ -18,14 +18,16 @@ You are being asked to participate in a research study. Participation in this st
             You will receive 1 point upon a completion of the study. The de-identified data will be made publicly available on the Open Science Framework (www.osf.io) upon completion of the research project.
 You are free to withdraw at any time without penalty. You also can withdraw consent after the experiment is complete and your data will be discarded. To do so, contact František Bartoš at <a href="f.bartos@uva.nl">f.bartos@uva.nl</a>. Formal complaints about this study may be addressed to the UvA Ethics Review Board via Lourens Waldorp at <a href="l.j.waldorp@uva.nl">l.j.waldorp@uva.nl</a>.
             <h4>Informed consent:</h4>
-            I hereby declare that I have been well informed about the nature, method and purpose of this study. I understand that my personal details, such as email address will not be revealed to people outside this project. I give permission to use my data in anonymized form and I know that both data and results from this research will be anonymously and confidentially disclosed to third parties. I understand that for the purpose of this research I have to answer all questions truthfully. I voluntarily agree to participate in this study. I know that I keep the right to quit my participation at any time without having to give any reason.
+	    I hereby declare that I have been well informed about the nature, method and purpose of this study. I understand that my personal details, such as email address will not be revealed to people outside this project. I give permission to use my data in anonymized form and I know that both data and results from this research will be anonymously and confidentially disclosed to third parties. I understand that for the purpose of this research I have to answer all questions truthfully. I voluntarily agree to participate in this study. I know that I keep the right to quit my participation at any time without having to give any reason. You can download this information letter and consent form from this <a href="consent-HT.pdf" target="_blank" rel="noopener noreferrer">LINK</a>.
             <br></br>
-            If you agree to the above informed consent, press 'Next' to participate in the experiment. If you do not accept,
-            you may leave this page.
-          </div>
+            If you agree to the above informed consent, press 'Accept' to participate in the experiment. If you do not accept,
+            press the 'Decline' button.
+	  </div>
         </div>
         <div class="manual">
-          <button class="instruction" onclick="consent()">NEXT</button>
+          <button class="instruction" onclick="consent()">ACCEPT</button>
+	  <button class="instruction" onclick="decline()">DECLINE</button>
+
         </div>
       </div>
 
@@ -42,15 +44,23 @@ You are being asked to participate in a research study. Participation in this st
             You will receive 1 point upon a completion of the study. The de-identified data will be made publicly available on the Open Science Framework (www.osf.io) upon completion of the research project.
 You are free to withdraw at any time without penalty. You also can withdraw consent after the experiment is complete and your data will be discarded. To do so, contact František Bartoš at <a href="f.bartos@uva.nl">f.bartos@uva.nl</a>. Formal complaints about this study may be addressed to the UvA Ethics Review Board via Lourens Waldorp at <a href="l.j.waldorp@uva.nl">l.j.waldorp@uva.nl</a>.
             <h4>Informed consent:</h4>
-            I hereby declare that I have been well informed about the nature, method and purpose of this study. I understand that my personal details, such as email address will not be revealed to people outside this project. I give permission to use my data in anonymized form and I know that both data and results from this research will be anonymously and confidentially disclosed to third parties. I understand that for the purpose of this research I have to answer all questions truthfully. I voluntarily agree to participate in this study. I know that I keep the right to quit my participation at any time without having to give any reason.
+            I hereby declare that I have been well informed about the nature, method and purpose of this study. I understand that my personal details, such as email address will not be revealed to people outside this project. I give permission to use my data in anonymized form and I know that both data and results from this research will be anonymously and confidentially disclosed to third parties. I understand that for the purpose of this research I have to answer all questions truthfully. I voluntarily agree to participate in this study. I know that I keep the right to quit my participation at any time without having to give any reason. You can download this information letter and consent form from this <a href="consent-SS.pdf" target="_blank" rel="noopener noreferrer">LINK</a>.
             <br></br>
-            If you agree to the above informed consent, press 'Next' to participate in the experiment. If you do not accept,
-            you may leave this page.
+            If you agree to the above informed consent, press 'Accept' to participate in the experiment. If you do not accept,
+            press the 'Decline' button.
           </div>
         </div>
         <div class="manual">
-          <button class="instruction" onclick="consent()">NEXT</button>
+          <button class="instruction" onclick="consent()">ACCEPT</button>
+	  <button class="instruction" onclick="decline()">DECLINE</button>
         </div>
+      </div>
+      <div id="decline-div">
+	      <div class="manual">
+		      <div class="instruction">
+			      You have declined the informed consent form. You may close this window now.
+		      </div>
+	      </div>
       </div>
 
 	    <div id="instructions-div">

@@ -38,6 +38,13 @@ function consent(){
   document.getElementById('consent-form2').style = "display:none"; 
   document.getElementById('instructions-div').style = "display:block";
 }
+function decline(){
+  console.log("declined")
+  document.getElementById('consent-form').style = "display:none";
+  document.getElementById('consent-form2').style = "display:none"; 
+  document.getElementById('decline-div').style = "display:block";
+
+}
 
 function instruction1(){
   document.body.scrollTop = 0; // For Safari

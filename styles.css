@@ -1,6 +1,9 @@
 #experiment-div{
   display: none;
 }
+#decline-div{
+  display: none;
+}
 #instructions-div{
 	display: none;
 }
